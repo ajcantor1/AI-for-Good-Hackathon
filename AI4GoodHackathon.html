@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Solar Output Generation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Nunito&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#Home">Home</a>
+        <a href="#Forecast">Forecast/Prediction Simulator</a>
+        <a href="#Info">Info</a>
+      </nav>
+    </header>
+    <section id="Home">
+      <div>
+        <h1 style="font-size: 5rem;">Welcome to Solar Power Predictions</h1>
+      </div>
+    </section>
+    <section id="Forecast">
+      <div>
+        <h2>Prediction Tool</h2>
+        <p>This tool will take weather forecast datasets and output a forecast of future solar power generation in graph and numerical form.</p>
+        <div class="inline"; style="border: 0px; text-align: center;">
+        <h3>Add weather dataset file</h3>
+        <button type="button">Add File</button>
+        <button type="button">Compute</button>
+      </div>
+          <div style= "border: 0px; width: 90%;">
+            <p style="font-weight: bold; text-align: center;">Example Graph***</p>
+            <img src="predicted_vs_actual_jax_solar.png" alt="Image of Generated forecast in graph form.">
+            <img src="gini_index.png">
+          </div>
+          <h2>Predicted Statistics</h2>
+          <table>
+            <tr>
+              <td>Date</td>
+              <td>Total Power Production (MW)</td>
+              <td>Peak Power Production (MWh)</td>
+            </tr>
+            <tr>
+              <td>07/01</td>
+              <td>#</td>
+              <td>#</td>
+            </tr>
+            <tr>
+              <td>07/02</td>
+              <td>#</td>
+              <td>#</td>
+            </tr>
+            <tr>
+              <td>07/03</td>
+              <td>#</td>
+              <td>#</td>
+            </tr>
+            <tr>
+              <td>07/04</td>
+              <td>#</td>
+              <td>#</td>
+            </tr>
+            <tr>
+              <td>07/05</td>
+              <td>#</td>
+              <td>#</td>
+            </tr>
+            <tr>
+              <td>07/06</td>
+              <td>#</td>
+              <td>#</td>
+            </tr>
+            <tr>
+              <td>07/07</td>
+                <td>#</td>
+                <td>#</td>
+            </tr>
+            <tr>
+              <td>07/08</td>
+              <td>#</td>
+              <td>#</td>
+            </tr>
+          </table>
+
+          <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet"/>
+
+
+<div class="container" style="border: 0px; width: 90%; font-size: 1.5rem">
+  <h2><br><br>Testing Results</h2>
+  <div class="row" style="border: 0px;">
+    <div class="col" style="border: 0px;">
+      <p>Jax Solar<br>
+
+        XGB Accuracy: 56.56%<br>
+
+        RF R2 0.7923901409719267
+      </p>
+    </div>
+    <div class="col" style="border: 0px;">
+      <p>
+      Blair<br>
+
+      XGB Accuracy: 72.22%<br>
+
+      RF R2 0.748052771963462
+    </p>
+    </div>
+
+      <div class="col" style="border: 0px;">
+      <p>
+      Simmons <br>
+      XGB Accuracy: 90.33%<br>
+
+      RF R2 0.7519220767903825
+    </p>
+  </div>
+
+    <div class="col" style="border: 0px;">
+      <p>Old Kings<br>
+
+      XGB Accuracy: 91.56%<br>
+
+      RF R2 0.6389120136926756
+    </p>
+
+    </div>
+
+    <div class="col" style="border: 0px;">
+      <p>
+      SunPort<br>
+
+      XGB Accuracy: 66.00%<br>
+
+      RF R2 0.8486862250431626
+    </p>
+    </div>
+  </div>
+</div>
+
+
+
+      </div>
+    </section>
+    <footer id="Info">
+      <h2>Special Thanks To Our "AI For Good Hackathon" Sponsors!</h2>
+        <ul>
+          <li>JEA</li>
+          <li>FIS</li>
+          <li>Microsoft</li>
+          <li>UNF</li>
+        </ul>
+
+    </footer>
+    
+  </body>
+</html>

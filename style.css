@@ -1,0 +1,141 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  max-width:100%;
+}
+
+html{
+  font-size:62.5%;
+}
+body{
+  font-size:1.8rem;
+  line-height:1.5;
+  color:white;
+  font-family: 'Alegreya', serif;
+}
+a{
+  color:#C1BDB3;
+  text-decoration:none;
+  letter-spacing:2px;
+  transition:2s;
+  font-family: 'Alegreya', serif;
+}
+a:hover{
+  color:#fff;
+}
+h1, h2{
+  letter-spacing:3px;
+  font-size:2.5rem;
+  text-align:center;
+  font-family: 'Nunito', sans-serif;
+}
+h1{
+  font-size:4rem;
+}
+section, footer{
+  padding:4% 0;
+}
+
+/*header section styles*/
+
+nav{
+  padding:2% 0%;
+  background-color: #323031;
+  display: flex;
+  justify-content:space-evenly;
+  position: fixed;
+  width:100%;
+  top:0;
+  text-align: center;
+  
+
+}
+a {
+  font-size: 1.7rem;
+  padding: 10px 0px;
+  margin: 10px 0;
+  color: white;
+  
+}
+
+a:link {
+  color: white;
+  margin: 10px;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
+/*Home Section Styles*/
+#Home{
+  height:90vh;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:#fff;
+  background-image: url('solar-cells-594166.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+}
+
+#Home button{
+  color:#506960;
+  padding:3% 5%;
+  border-radius:10px;
+  border:3px solid #506960;
+  transition:2s;
+  font-family: 'Alegreya', serif;
+}
+#Home button:hover{
+  background-color:#506960;
+  color:#fff;
+}
+
+/*About Section*/
+#Forecast div{
+  width:60%;
+  margin:0 auto;
+  padding:4%;
+  border:3px solid #7F7979;
+  background-color:#fff;
+  color: black;
+}
+
+table, th, td{
+  border: 1px solid black;
+  width: 33%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+h3{
+  /* letter-spacing:1px; */
+  font-size:0.7rem;
+  text-align: center;
+  font-family: 'serif', sans-serif;
+  font-weight: lighter;
+
+}
+}
+#Info{
+  background-color:#3D3B3C;
+}
+
+footer{
+  background-color:#3D3B3C;
+  color:#fff;
+  text-align:center;
+}
